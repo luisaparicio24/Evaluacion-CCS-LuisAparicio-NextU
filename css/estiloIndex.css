@@ -1,3 +1,35 @@
 #linkIndex{
   text-decoration: underline;
 }
+
+.seccion-principal{
+  background-color: #82c3a6;
+  width: 100%;
+  text-align: center;
+}
+
+.seccion-principal img{
+  margin: 3%;
+  width: 80%;
+}
+
+.seccion-secundaria{
+  background-color: #d5c75f;
+  /*
+  border: 1px solid black;
+  */
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-flow: row;
+}
+
+.seccion-secundaria img{
+  margin: 3%;
+  width: 90%;
+  vertical-align: middle;
+}
+
+[class^="img-sec-"]{
+  width: 50%;
+}
