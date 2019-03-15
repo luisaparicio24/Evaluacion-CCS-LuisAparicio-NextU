@@ -32,4 +32,19 @@
 
 [class^="img-sec-"]{
   width: 50%;
+  -webkit-transition: transform 2s;
+  transition: transform 2s;
+}
+
+.img-sec-1:hover{
+  transform: rotate(10deg);
+}
+
+.img-sec-2:hover{
+  transform: translate(20px, -5px);
+}
+
+.linkima:hover{
+  text-decoration: none;
+  background-color:transparent;
 }

@@ -51,12 +51,26 @@ header{
   font-size: 1em;
 }
 
+[id^="link"]:link, [id^="link"]:visited ,[id^="link"]:active{
+  text-decoration: none;
+  color: inherit;
+  margin-right: 4px;
+}
+/*
 a:link, a:visited, a:active{
   text-decoration: none;
   color: inherit;
   margin-right: 4px;
 }
-
+*/
 a:hover{
   background-color: #acbbc3;
+}
+
+footer{
+  background-color: #C6d5c5;
+  min-height: 200px;
+  border-radius: 0px 0px 10px 10px;
+  font-family: merriweather;
+  color: black;
 }
