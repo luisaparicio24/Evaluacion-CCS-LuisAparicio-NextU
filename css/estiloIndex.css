@@ -21,7 +21,7 @@
   width: 100%;
   text-align: center;
   display: flex;
-  flex-flow: row;
+  flex-flow: wrap;
 }
 
 .seccion-secundaria img{
@@ -31,9 +31,20 @@
 }
 
 [class^="img-sec-"]{
-  width: 50%;
   -webkit-transition: transform 2s;
   transition: transform 2s;
+}
+
+@media (max-width:900px) {
+  [class^="img-sec-"]{
+    width: 100%;
+  }
+}
+
+@media (min-width:901px) {
+  [class^="img-sec-"]{
+    width: 50%;
+  }
 }
 
 .img-sec-1:hover{
