@@ -18,12 +18,20 @@ body{
   margin: auto;
 }
 
+@keyframes rebote {
+  0%   {margin-top: 150%;}
+  60%  {margin-top: -5%;}
+  100% {margin-top: 0%;}
+}
+
 header{
   background-color: #5b7989;
   height: 160px;
   border-radius: 10px 10px 0px 0px;
   font-family: DancingScript;
   color: white;
+  animation-name: rebote;
+  animation-duration: 1s;
 }
 
 [id^="link"]:link, [id^="link"]:visited ,[id^="link"]:active{
@@ -62,8 +70,6 @@ footer{
   justify-content: space-between;
 }
 
-
-
 p>a{
   text-decoration: none;
   color: black;
@@ -80,7 +86,6 @@ p>a{
 }
 
 @media (max-width:900px) {
-
   .contenedor-header{
     display: flex;
     display: -webkit-flex;
@@ -116,7 +121,6 @@ p>a{
 }
 
 @media (min-width:901px) {
-
   .contenedor-header{
     display: flex;
     display: -webkit-flex;

@@ -1,3 +1,46 @@
 #linkPaisajes{
   text-decoration: underline;
 }
+
+#contenido{
+  background-color: #d5c75f;
+  width: 100%;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+[class^="paisaje-img-"]{
+  width: 100%;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+@media (min-width:901px) {
+  .div-paisaje{
+    width: 31%;
+  }
+}
+
+@media (max-width:900px) {
+  .div-paisaje{
+    width: 90%;
+  }
+}
+
+.paisaje-img-1{
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+
+.paisaje-img-2,.paisaje-img-4,.paisaje-img-6{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.paisaje-img-3,.paisaje-img-5{
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
